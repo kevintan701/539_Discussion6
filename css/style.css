@@ -1,0 +1,235 @@
+body {
+    line-height: 2;
+    /* Set line spacing */
+}
+
+
+header,
+nav {
+    /* Set padding and margin */
+    padding: 20px 10px;
+    margin: 0 0 20px 0;
+}
+
+nav ul li {
+    /* Set display, margin, padding, font-size, background-color */
+    display: inline-block;
+    /* Displays list items horizontally */
+    margin: 0 10px;
+    /* Adds space between list items */
+    padding: 5px 10px;
+    /* Padding inside each list item */
+    background-color: #f0f0f0;
+    /* A light grey background color */
+    font-size: 1rem;
+    /* Sets the font size */
+}
+
+nav a {
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited {
+    /* Set color */
+    color: black;
+
+}
+
+nav a.current {
+    /* Set text decoration, transformation, and underline properties */
+    color: blue;
+    text-decoration: underline wavy;
+    /* Adds a wavy underline */
+    text-transform: uppercase;
+    /* Converts text to uppercase */
+    text-decoration-skip-ink: auto;
+    /* Optional: Adjusts how the underline interacts with letters */
+    text-underline-offset: 15px;
+    /* Moves the underline down a bit */
+}
+
+
+
+h1 {
+    /*Set font and font size*/
+    font-family: 'Times New Roan', 'Times New Roman', Times, serif;
+    font-size: 48px;
+    /* Example font size */
+}
+
+h2 {
+    /*Set font, font size, and alignment*/
+    font-family: 'Times New Roan', 'Times New Roman', Times, serif;
+    font-size: 36px;
+    text-align: center;
+    /* Centers the heading */
+}
+
+h3 {
+    /*Set font size*/
+    font-family: 'Times New Roan', 'Times New Roman', Times, serif;
+    font-size: 24px;
+    /* Example font size */
+
+}
+
+h1,
+h2,
+h3 {
+    /*Set margin */
+    margin: 15px;
+
+}
+
+.grid {
+    /*Set width, margin, border properties, background color, and grid properties */
+    width: 90%;
+    /* Makes the grid take up 90% of the body's width */
+    margin: 0 auto;
+    /* Centers the grid horizontally */
+    display: grid;
+    /* Enables grid layout */
+    grid-template-columns: 1fr 1fr;
+    /* Creates two equally sized columns */
+    gap: 10px;
+    /* Sets the space between rows and columns to 10px */
+    row-gap: 10px;
+    /* Sets the space between rows to 10px */
+    ;
+    background-color: #fff;
+    /* Optional: Sets a background color for the grid */
+    padding: 10px;
+    /* Adds some padding around the entire grid */
+}
+
+.grid div {
+    /* Set border properties, padding, and background color */
+    border: 3px solid black;
+    /* Adds a 3px black border around images */
+    border-radius: 20px;
+    /* Adds rounded corners to the grid container */
+
+}
+
+.grid img {
+    /* Set width, margin, and display */
+    width: 90%;
+    /* Makes images take up 90% of the column width */
+    display: block;
+    /* Ensures images are block-level elements to enable margin settings */
+    margin: 0 auto;
+    /* Centers images within their columns */
+}
+
+
+.grid div:nth-child(3n+1) {
+    /* Set box shadow */
+    box-shadow: 3px 3px black;
+}
+
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -3px 3px black;
+}
+
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+    box-shadow: 3px 3px black, -3px 3px black;
+
+
+    p+p {
+        /* Set indentation */
+        text-indent: 20px;
+    }
+
+    p {
+        /* Set margin */
+        margin: 20px;
+    }
+
+
+    .grid ul li {
+        /* Set margin, line-spacing, list styling  */
+        list-style-image: url("/images/sketchbook.png");
+        line-height: 1;
+        margin: 0 0 20px 45px;
+    }
+
+    @media(min-width: 769px) {
+        .grid {
+            /*Set width, margin, border properties, background color, and grid properties */
+            width: 90%;
+            /* Makes the grid take up 90% of the body's width */
+            margin: 0 auto;
+            /* Centers the grid horizontally */
+            display: grid;
+            /* Enables grid layout */
+            grid-template-columns: 1fr 1fr 1fr;
+            /* Creates two equally sized columns */
+            gap: 10px;
+            /* Sets the space between rows and columns to 10px */
+            row-gap: 10px;
+            /* Sets the space between rows to 10px */
+            ;
+            background-color: #fff;
+            /* Optional: Sets a background color for the grid */
+            padding: 10px;
+            /* Adds some padding around the entire grid */
+        }
+
+        .grid div {
+            /* Set border properties, padding, and background color */
+            border: 3px solid black;
+            /* Adds a 3px black border around images */
+            border-radius: 20px;
+            /* Adds rounded corners to the grid container */
+
+        }
+
+        .grid img {
+            /* Set width, margin, and display */
+            width: 90%;
+            /* Makes images take up 90% of the column width */
+            display: block;
+            /* Ensures images are block-level elements to enable margin settings */
+            margin: 0 auto;
+            /* Centers images within their columns */
+        }
+
+
+        .grid div:nth-child(3n+1) {
+            /* Set box shadow */
+            box-shadow: 3px 3px black;
+        }
+
+        .grid div:nth-child(3n) {
+            /* Set box shadow */
+            box-shadow: -3px 3px black;
+        }
+
+        .grid div:nth-child(3n+2) {
+            /* Set box shadow */
+            box-shadow: 3px 3px black, -3px 3px black;
+
+
+            p+p {
+                /* Set indentation */
+                text-indent: 20px;
+            }
+
+            p {
+                /* Set margin */
+                margin: 20px;
+            }
+
+
+            .grid ul li {
+                /* Set margin, line-spacing, list styling  */
+                list-style-image: url("/images/sketchbook.png");
+                line-height: 1;
+                margin: 0 0 10px 0;
+            }
+        }
+    }
+}
